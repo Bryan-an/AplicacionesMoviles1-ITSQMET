@@ -1,0 +1,39 @@
+// JAVASCRIPT
+// LENGUAJE INTERPRETADO, ORIENTADO A OBJETOS, DÉBILMENTE TIPADO, DINÁMICO
+
+// TIPOS DE DATOS
+// PRIMITIVOS: NUMBER, BOLEANO, STRING, NULL, UNDEFINED
+// OBJETO: ARRAY
+
+// VARIABLES
+// ESPACIO DE MEMORIA QUE ALMACENA VALORES
+
+// TIPO DE VARIABLES
+// VAR, LET, CONST
+
+// DEFINICIÓN DE VARIABLES
+var nombre;
+
+// ASIGNACIÓN DE VARIABLES
+var nombre = "Bryan";
+// console.log(nombre);
+
+// VARIABLE VAR
+// REDECLARADA
+// REASIGNADA
+var nombre = "Claudia";
+// console.log(nombre);
+
+// VARIABLE LET
+// NO PERMITE REDECLARAR
+// NO PERMITE REASIGNAR
+let nombre = "Pepito";
+// console.log(nombre);
+
+let apellido = "Pepito";
+
+// VARIABLE CONST
+// CONSTANTE
+// NO REDECLARADA
+// NO REASIGNADA
+const edad = 18;
