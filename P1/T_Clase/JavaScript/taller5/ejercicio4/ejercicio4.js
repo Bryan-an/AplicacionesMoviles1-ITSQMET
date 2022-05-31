@@ -1,4 +1,5 @@
-// Mostrar todos los números impares que hay entre dos números introducidos por el usuario.
+// Mostrar todos los números impares que hay entre dos números
+// introducidos por el usuario.
 // Rango hasta 100
 // Resultado solo lo que está entre esos dos números
 // Validar el el valor ingresado sea número y hasta 100
