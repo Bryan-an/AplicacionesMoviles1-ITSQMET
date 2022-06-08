@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head id="head">
+    <script type="text/javascript" src="src/head.js"></script>
+  </head>
+  <body id="body">
+    <main>
+      <div class="main-container">
+        <h2 class="title">Bucles</h2>
+        <h3 class="subtitle">Definición</h3>
+        <p class="paragraph">
+          En JavaScript los bucles (loops) son utilizados para realizar tareas
+          repetitivas con base en una condición. Las condiciones típicamente
+          devuelven true (verdadero) o false(falso) al ser evaluados. El bucle
+          continuará ejecutándose hasta que la condición devuelva false.
+        </p>
+        <div class="img-container">
+          <img src="assets/images/loops.jpg" alt="Bucles" />
+        </div>
+        <h3 class="subtitle">Tipos de bucles</h3>
+        <h4 class="subtitle-2">for</h4>
+        <p class="paragraph">
+          Crea un bucle que consiste en tres expresiones opcionales, encerradas
+          en paréntesis y separadas por puntos y comas, seguidas de una
+          sentencia ejecutada en un bucle.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">for</span> ([<span class="method">expresion-inicial</span>]; [<span class="method">condicion</span>]; [<span class="method">expresion-final</span>]) <span class="function">sentencia</span></code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">for</span> (<span class="expression">let</span> <span class="variable">pasos</span> = <span class="number">2</span>; <span class="variable">pasos</span> &lt; <span class="number">5</span>; <span class="variable">pasos</span>++) {
+  <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Camina un paso hacia el este"</span>);
+}</code></pre>
+        <h4 class="subtitle-2">forEach</h4>
+        <p class="paragraph">
+          El método forEach() ejecuta la función indicada una vez por cada
+          elemento del array.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="variable">arr</span>.<span class="method">forEach</span>(<span class="expression">function</span> <span class="function">callback</span>(<span class="variable">currentValue</span>, <span class="variable">index</span>, <span class="variable">array</span>) {
+    <span class="comment">// tu iterador</span>
+}[, <span class="variable">thisArg</span>]);</code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="variable">equipo1</span>.<span class="method">forEach</span>((<span class="variable">element</span>) => <span class="variable">console</span>.<span class="method">log</span>(<span class="variable">element</span>));</code></pre>
+        <h4 class="subtitle-2">for...in</h4>
+        <p class="paragraph">
+          La instrucción for-in itera sobre todas las propiedades enumerables de
+          un objeto que está codificado por cadenas (ignorando los codificados
+          por Símbolos, incluidas las propiedades enumerables heredadas.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">for</span> (<span class="variable">variable</span> <span class="method">in</span> <span class="variable">objeto</span>)
+  <span class="string">instrucción</span></code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">const</span> <span class="variable">items</span> = {
+  <span class="variable">trajes</span>: <span class="number">30</span>,
+  <span class="variable">pantalones</span>: <span class="number">40</span>,
+  <span class="variable">zapatos</span>: <span class="number">20</span>,
+  <span class="variable">calcetines</span>: <span class="number">5</span>,
+};
+
+<span class="expression">for</span> (<span class="expression">const</span> <span class="variable">key</span> <span class="method">in</span> <span class="variable">items</span>) {
+  <span class="variable">console</span>.<span class="method">log</span>(<span class="string">`Los ${<span class="variable">key</span>} cuestan $ ${<span class="variable">items</span>[<span class="variable">key</span>].<span class="method">toFixed</span>(<span class="number">2</span>)}`</span>);
+}</code></pre>
+        <h4 class="subtitle-2">for...of</h4>
+        <p class="paragraph">
+          La sentencia for...of ejecuta un bloque de código para cada elemento
+          de un objeto iterable, como lo son: String, Array, objetos similares a
+          array (por ejemplo, arguments or NodeList), TypedArray, Map, Set e
+          iterables definidos por el usuario.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">for</span> (<span class="variable">variable</span> <span class="method">of</span> <span class="variable">iterable</span>) {
+  <span class="string">statement</span>
+}</code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">const</span> <span class="variable">daysOfWeek</span> = [
+  <span class="string">"Lunes"</span>,
+  <span class="string">"Martes"</span>,
+  <span class="string">"Miércoles"</span>,
+  <span class="string">"Jueves"</span>,
+  <span class="string">"Viernes"</span>,
+  <span class="string">"Sábado"</span>,
+  <span class="string">"Domingo"</span>,
+];
+
+<span class="expression">for</span> (<span class="expression">const</span> <span class="variable">day</span> <span class="method">of</span> <span class="variable">daysOfWeek</span>) {
+  <span class="variable">console</span>.<span class="method">log</span>(<span class="variable">day</span>);
+}</code></pre>
+        <h4 class="subtitle-2">while</h4>
+        <p class="paragraph">
+          Crea un bucle que ejecuta una sentencia especificada mientras cierta
+          condición se evalúe como verdadera. Dicha condición es evaluada antes
+          de ejecutar la sentencia.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">while</span> (<span class="method">condicion</span>)
+  <span class="string">sentencia</span>
+        </code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">while</span> (<span class="variable">n</span> &lt;= <span class="number">3</span>) {
+  <span class="variable">n</span>++;
+  <span class="variable">x</span> += <span class="variable">n</span>;
+  <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"N:"</span>, <span class="variable">n</span>);
+}</code></pre>
+        <h4 class="subtitle-2">do...while</h4>
+        <p class="paragraph">
+          La sentencia (hacer mientras) crea un bucle que ejecuta una sentencia
+          especificada, hasta que la condición de comprobación se evalúa como
+          falsa. La condición se evalúa después de ejecutar la sentencia, dando
+          como resultado que la sentencia especificada se ejecute al menos una
+          vez.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">do</span>
+  <span class="string">sentencia</span>
+<span class="expression">while</span> (<span class="method">condición</span>);</code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">do</span> {
+  <span class="variable">n</span>++;
+  <span class="variable">x</span> += <span class="variable">n</span>;
+  <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"N:"</span>, <span class="variable">n</span>);
+} <span class="expression">while</span> (<span class="variable">n</span> &lt;= <span class="number">3</span>);</code></pre>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/header.js"></script>
+    <script type="text/javascript" src="src/footer.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>

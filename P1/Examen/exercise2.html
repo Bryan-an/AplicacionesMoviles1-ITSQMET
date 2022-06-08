@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Examen Primer Parcial</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Ejercicio 1</a>
+        </li>
+        <li>
+          <a href="exercise2.html">Eercicio 2</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main-container">
+        <div>
+          <h1>Ejercicio 2</h1>
+        </div>
+        <form id="form">
+          <div>
+            <h2 id="team">Grupo 1</h2>
+          </div>
+          <div>
+            <div>
+              <label for="name">Ingrese un nombre:</label>
+            </div>
+            <div>
+              <input type="text" id="name" name="name" required />
+            </div>
+          </div>
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+        <div id="team1" class="info" hidden>
+          <h3>Grupo 1</h3>
+          <p><b>Fecha:</b> 3/6/2022</p>
+          <p><b>Hora de presentación:</b> 8:00 AM</p>
+          <h4>Integrantes:</h4>
+        </div>
+        <div id="team2" class="info" hidden>
+          <h3>Grupo 2</h3>
+          <p><b>Fecha:</b> 7/6/2022</p>
+          <p><b>Hora de presentación:</b> 9:00 AM</p>
+          <h4>Integrantes:</h4>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/exercise2.js"></script>
+  </body>
+</html>

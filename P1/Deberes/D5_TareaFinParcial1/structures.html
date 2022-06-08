@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head id="head">
+    <script type="text/javascript" src="src/head.js"></script>
+  </head>
+  <body id="body">
+    <main>
+      <div class="main-container">
+        <h2 class="title">Estructuras de control</h2>
+        <h3 class="subtitle">Definición</h3>
+        <p class="paragraph">
+          Las estructuras de control en javascript y en la mayoría de los
+          lenguajes de programación se utilizan en los programas para definir el
+          flujo de instrucciones que se van ejecutando. Si no fuera por las
+          estructuras de control lo único que podríamos hacer es ejecutar una
+          instrucción tras otra y no tendriamos forma de aplicar unas funciones
+          u otras según las condiciones que nosotros queramos establecer.
+        </p>
+        <div class="img-container">
+          <img
+            src="assets/images/control_structures.png"
+            alt="Estructuras de control"
+          />
+        </div>
+        <h3 class="subtitle">Tipos de estructuras de control</h3>
+        <h4 class="subtitle-2">if...else</h4>
+        <p class="paragraph">
+          Ejecuta una sentencia si una condición especificada es evaluada como
+          verdadera. Si la condición es evaluada como falsa, otra sentencia
+          puede ser ejecutada.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">if</span> (<span class="variable">condición1</span>)
+  <span class="string">sentencia1</span>
+<span class="expression">else if</span> (<span class="variable">condición2</span>)
+  <span class="string">sentencia2</span>
+<span class="expression">else if</span> (<span class="variable">condición3</span>)
+  <span class="string">sentencia3</span>
+...
+<span class="expression">else</span>
+  <span class="string">sentenciaN</span></code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">if</span> (<span class="variable">promedio</span> &gt;= <span class="number">7</span>) {
+  <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Aprobado"</span>);
+} <span class="expression">else if</span> (<span class="variable">promedio</span> &lt;= <span class="number">6</span> || <span class="variable">promedio</span> &gt;= <span class="number">5</span>) {
+  <span class="expression">if</span> (<span class="variable">promedio</span> === <span class="number">6</span>) {
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Supletorio 1"</span>);
+  } <span class="expression">else</span> {
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Supletorio 2"</span>);
+  }
+}</code></pre>
+        <h4 class="subtitle-2">Operador condicional ternario</h4>
+        <p class="paragraph">
+          Hay otro operador condicional en JavaScript que asigna un valor a una
+          variable, basado en una condición.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="variable">variable</span> = (<span class="method">condicion</span>) ? <span class="function">valor1</span> : <span class="function">valor2</span></code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">var</span> <span class="variable">isAdulto</span> = (<span class="variable">anios</span> &lt; <span class="number">18</span>) ? <span class="string">"Es joven"</span> : <span class="string">"Es adulto"</span>;</code></pre>
+        <h4 class="subtitle-2">switch</h4>
+        <p class="paragraph">
+          La declaración switch evalúa una expresión, comparando el valor de esa
+          expresión con una instancia case, y ejecuta declaraciones asociadas a
+          ese case, así como las declaraciones en los case que siguen.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="method">switch</span> (<span class="function">expresión</span>) {
+  <span class="expression">case</span> <span class="variable">valor1</span>:
+    <span class="comment">//Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor1</span>
+    [<span class="expression">break</span>;]
+  <span class="expression">case</span> <span class="variable">valor2</span>:
+    <span class="comment">//Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor2</span>
+    [<span class="expression">break</span>;]
+  ...
+  <span class="expression">case</span> <span class="variable">valorN</span>:
+    <span class="comment">//Declaraciones ejecutadas cuando el resultado de expresión coincide con valorN</span>
+    [<span class="expression">break</span>;]
+  <span class="expression">default</span>:<span class="comment">
+      //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor
+      //de la expresión</span>
+    [<span class="expression">break</span>;]
+}</code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="method">switch</span> (<span class="variable">day</span>) {
+  <span class="expression">case</span> <span class="number">1</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Lunes"</span>);
+    <span class="expression">break</span>;
+  <span class="expression">case</span> <span class="number">2</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Martes"</span>);
+    <span class="expression">break</span>;
+  <span class="expression">case</span> <span class="number">3</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Miércoles"</span>);
+    <span class="expression">break</span>;
+  <span class="expression">case</span> <span class="number">4</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Jueves"</span>);
+    <span class="expression">break</span>;
+  <span class="expression">case</span> <span class="number">5</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Viernes"</span>);
+    <span class="expression">break</span>;
+  <span class="expression">case</span> <span class="number">6</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Sábado"</span>);
+    <span class="expression">break</span>;
+  <span class="expression">case</span> <span class="number">7</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Domingo"</span>);
+    <span class="expression">break</span>;
+  <span class="expression">default</span>:
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">"Día inválido"</span>);
+    <span class="expression">break</span>;
+}</code></pre>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/header.js"></script>
+    <script type="text/javascript" src="src/footer.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>

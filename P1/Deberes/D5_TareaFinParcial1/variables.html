@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head id="head">
+    <script type="text/javascript" src="src/head.js"></script>
+  </head>
+  <body id="body">
+    <main>
+      <div class="main-container">
+        <h2 class="title">Variables</h2>
+        <h3 class="subtitle">Definición</h3>
+        <p class="paragraph">
+          Las variables en los lenguajes de programación siguen una lógica
+          similar a las variables utilizadas en otros ámbitos como las
+          matemáticas. Una variable es un elemento que se emplea para almacenar
+          y hacer referencia a otro valor. Gracias a las variables es posible
+          crear "programas genéricos", es decir, programas que funcionan siempre
+          igual independientemente de los valores concretos utilizados.
+        </p>
+        <div class="img-container">
+          <img src="assets/images/variable_types.jpeg" alt="Tipos de variables" />
+        </div>
+        <h3 class="subtitle">Tipos de variables</h3>
+        <table>
+          <tr>
+            <td></td>
+            <td
+              class="paragraph "
+              style="text-align: center; font-weight: bold"
+            >
+              var
+            </td>
+            <td
+              class="paragraph "
+              style="text-align: center; font-weight: bold"
+            >
+              let
+            </td>
+            <td
+              class="paragraph "
+              style="text-align: center; font-weight: bold"
+            >
+              const
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Almacenada en el ámbito global</td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Alcance de función</td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Alcance de bloque</td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">¿Puede ser reasignada?</td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">¿Puede ser redeclarada?</td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">¿Permite hoisting?</td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-check check"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+            <td class="text-center">
+              <i class="fa-solid fa-circle-xmark xmark"></i>
+            </td>
+          </tr>
+        </table>
+        <h3 class="subtitle">Sintaxis</h3>
+        <ul>
+          <li>
+            <p class="paragraph">
+              <b>var: </b>
+              <code
+                ><span class="expression">var</span>
+                <span class="variable">name</span> =
+                <span class="string">"Diego"</span>;</code
+              >
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>let: </b>
+              <code
+                ><span class="expression">let</span>
+                <span class="variable">age</span> =
+                <span class="number">38</span>;</code
+              >
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>const: </b>
+              <code
+                ><span class="expression">const</span>
+                <span class="variable">PRIMARY_COLOR</span> =
+                <span class="string">"#dfaefa"</span>;</code
+              >
+            </p>
+          </li>
+        </ul>
+        <h3 class="subtitle">Ejemplos</h3>
+        <span class="comment">
+          <span class="variable">
+            <pre><code><span class="method"><span class="expression">var</span></span> <span class="variable">i</span> = <span class="string">"global"</span>;</span>
+            </span>
+<span class="expression">function</span> <span class="function">foo</span>() {
+    <span class="variable">i</span> = <span class="string">"local"</span>;
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="variable">i</span>); <span class="comment">// local</span>
+<span class="method"><span class="number">}</span></span>
+
+<span class="function">foo</span>();
+<span class="variable">console</span>.<span class="variable"><span class="method">log</span></span>(<span class="variable">i</span>); <span class="comment">// local</span></code></pre>
+        <pre><code><span class="expression">function</span> <span class="function">foo</span>() {
+    <span class="expression">let</span> <span class="variable">i</span> = <span class="number">0</span>;
+    <span class="method">if</span>(<span class="expression">true</span>) {
+        <span class="expression">let</span> <span class="variable">i</span> = <span class="number">1</span>; <span class="comment">// Sería otra variable i solo para el bloque if</span>
+        <span class="variable">console</span>.<span class="method">log</span>(<span class="variable">i</span>); <span class="comment">// 1</span>
+    }
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="variable">i</span>); <span class="comment">// 0</span>
+}
+
+<span class="function">foo</span>();</code></pre>
+        <pre><code><span class="expression">const</span> <span class="variable">user</span> = <span class="string">'Juan'</span>;
+<span class="variable">user</span> = <span class="string">'Manolo'</span>; <span class="comment">// TypeError: Assignment to constant variable</span></code></pre>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/header.js"></script>
+    <script type="text/javascript" src="src/footer.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>

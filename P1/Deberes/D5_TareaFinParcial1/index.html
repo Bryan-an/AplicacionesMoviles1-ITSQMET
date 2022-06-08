@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head id="head">
+    <script type="text/javascript" src="src/head.js"></script>
+  </head>
+  <body id="body">
+    <main>
+      <div class="main-container">
+        <h2 class="title">Valores</h2>
+        <h3 class="subtitle">Definición</h3>
+        <p class="paragraph">Son datos que almacenamos en variables.</p>
+        <p class="paragraph">
+          El tipo de dato es una propiedad de un valor que determina valores que
+          puede tomar, que tipos de operaciones podemos realizar sobre este y
+          cómo su representación interna.
+        </p>
+        <div class="img-container">
+          <img src="assets/images/boxes.png" alt="Valores" />
+        </div>
+        <h3 class="subtitle">Tipos de datos</h3>
+        <p class="paragraph">
+          JavaScript es un lenguaje de tipado débil o dinámico. Esto significa
+          que no es necesario declarar el tipo de variable antes de usarla. En
+          los lenguajes de tipado dinámico como JavaScript o Phyton la
+          comprobación de los tipos se realiza durante la ejecución del programa
+          en vez de durante la compilación.
+        </p>
+        <div class="img-container d-flex justify-content-center">
+          <img src="assets/images/data_types.png" alt="Tipos de datos" />
+        </div>
+        <h3 class="subtitle">Sintaxis</h3>
+
+        <ul>
+          <li>
+            <p class="paragraph">
+              <b>String:</b>
+              <code><span class="string">"Hello world"</span></code>
+              <code><span class="string">'Hello world'</span></code>
+              <code
+                ><span class="string"
+                  >`Hello ${<span class="variable">name</span>}`</span
+                ></code
+              >
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>Number:</b> <code><span class="number">10</span></code>
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>Boolean:</b> <code><span class="expression">false</span></code>
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>Null:</b> <code><span class="expression">null</span></code>
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>Undefined:</b>
+              <code><span class="expression">undefined</span></code>
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>Array:</b>
+              <code
+                >[<span class="string">"María"</span>,
+                <span class="string">"José"</span>,
+                <span class="string">"Carlos"</span>]</code
+              >
+            </p>
+          </li>
+          <li>
+            <p class="paragraph">
+              <b>Objeto:</b>
+            </p>
+            <pre class="paragraph"><code>{
+  <span class="variable">nombre:</span> <span class="string">"Marcel"</span>,
+  <span class="variable">edad:</span> <span class="string">"38"</span>,
+  <span class="variable">ciudad:</span> <span class="string">"Alaior"</span>,
+}</code></pre>
+          </li>
+        </ul>
+        <h3 class="subtitle">Ejemplos</h3>
+        <pre><code><span class="variable">console</span>.<span class="method">log</span>(<span class="expression">typeof</span> <span class="string">"Carlos"</span>); <span class="comment">//'string'</span>
+<span class="variable">console</span>.<span class="method">log</span>(<span class="expression">typeof</span> <span class="number">34</span>); <span class="comment">//'number'</span>
+<span class="variable">console</span>.<span class="method">log</span>(<span class="expression">typeof</span> <span class="expression">false</span>); <span class="comment">//'boolean'</span>
+<span class="variable">console</span>.<span class="method">log</span>(<span class="expression">typeof</span> <span class="expression">null</span>); <span class="comment">//'object'</span>
+<span class="variable">console</span>.<span class="method">log</span>(<span class="expression">typeof</span> <span class="expression">undefined</span>); <span class="comment">//'undefined'</span>
+<span class="variable">console</span>.<span class="method">log</span>(<span class="expression">typeof</span> [<span class="string">"María"</span>, <span class="string">"José"</span>, <span class="string">"Carlos"</span>]); <span class="comment">//'object'</span>
+<span class="variable">console</span>.<span class="method">log</span>(<span class="expression">typeof</span> {<span class="variable">name:</span> <span class="string">"Juan"</span>, <span class="variable">age:</span> <span class="number">18</span>}); <span class="comment">//'object'</span></code></pre>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/header.js"></script>
+    <script type="text/javascript" src="src/footer.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>

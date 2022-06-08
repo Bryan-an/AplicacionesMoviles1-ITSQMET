@@ -5,9 +5,12 @@
     },
     {
       "path": "P1\\Deberes"
+    },
+    {
+      "path": "P1\\Examen"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "T_Clase"
+    "liveServer.settings.multiRootWorkspaceName": "Deberes"
   }
 }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head id="head">
+    <script type="text/javascript" src="src/head.js"></script>
+  </head>
+  <body id="body">
+    <main>
+      <div class="main-container">
+        <h2 class="title">Operadores</h2>
+        <h3 class="subtitle">Definición</h3>
+        <p class="paragraph">
+          Los operadores permiten manipular el valor de las variables, realizar
+          operaciones matemáticas con sus valores y comparar diferentes
+          variables. De esta forma, los operadores permiten a los programas
+          realizar cálculos complejos y tomar decisiones lógicas en función de
+          comparaciones y otros tipos de condiciones.
+        </p>
+        <h3 class="subtitle">Tipos de operadores</h3>
+        <h4 class="subtitle-2">Operadores aritméticos</h4>
+        <table>
+          <tr>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Operador
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Descripción
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Ejemplo
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Residuo (%)</td>
+            <td class="paragraph">
+              Operador binario. Devuelve el resto entero de dividir los dos
+              operandos.
+            </td>
+            <td class="paragraph">12 % 5 devuelve 2.</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Incremento (++)</td>
+            <td class="paragraph">
+              Operador unario. Agrega uno a su operando. Si se usa como operador
+              prefijo (++x), devuelve el valor de su operando después de agregar
+              uno; si se usa como operador sufijo (x++), devuelve el valor de su
+              operando antes de agregar uno.
+            </td>
+            <td class="paragraph">
+              Si x es 3, ++x establece x en 4 y devuelve 4, mientras que x++
+              devuelve 3 y, solo entonces, establece x en 4.
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Decremento (--)</td>
+            <td class="paragraph">
+              Operador unario. Resta uno de su operando. El valor de retorno es
+              análogo al del operador de incremento.
+            </td>
+            <td class="paragraph">
+              Si x es 3, entonces --x establece x en 2 y devuelve 2, mientras
+              que x-- devuelve 3 y, solo entonces, establece x en 2.
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Negación unaria (-)</td>
+            <td class="paragraph">
+              Operador unario. Devuelve la negación de su operando.
+            </td>
+            <td class="paragraph">Si x es 3, entonces -x devuelve -3.</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Positivo unario (+)</td>
+            <td class="paragraph">
+              Operador unario. Intenta convertir el operando en un número, si
+              aún no lo es.
+            </td>
+            <td class="paragraph">+"3" devuelve 3. +true devuelve 1.</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Operador de exponenciación (**)</td>
+            <td class="paragraph">
+              Calcula la base a la potencia de exponente, es decir, base<sup
+                >exponente</sup
+              >
+            </td>
+            <td class="paragraph">2 ** 3 retorna 8. 10 ** -1 retorna 0.1.</td>
+          </tr>
+        </table>
+        <h4 class="subtitle-2">Operadores lógicos</h4>
+        <table>
+          <tr>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Operador
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Uso
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Descripción
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">AND Lógico (&&)</td>
+            <td class="paragraph">expr1 && expr2</td>
+            <td class="paragraph">
+              Devuelve expr1 si se puede convertir a false; de lo contrario,
+              devuelve expr2. Por lo tanto, cuando se usa con valores booleanos,
+              && devuelve true si ambos operandos son true; de lo contrario,
+              devuelve false.
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">OR lógico (||)</td>
+            <td class="paragraph">expr1 || expr2</td>
+            <td class="paragraph">
+              Devuelve expr1 si se puede convertir a true; de lo contrario,
+              devuelve expr2. Por lo tanto, cuando se usa con valores booleanos,
+              || devuelve true si alguno de los operandos es true; si ambos son
+              falsos, devuelve false.
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">NOT lógico (!)</td>
+            <td class="paragraph">!expr</td>
+            <td class="paragraph">
+              Devuelve false si su único operando se puede convertir a true; de
+              lo contrario, devuelve true.
+            </td>
+          </tr>
+        </table>
+        <h4 class="subtitle-2">Operadores de comparación</h4>
+        <table>
+          <tr>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Operador
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Descripción
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Ejemplos que devuelven true
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Igual (==)</td>
+            <td class="paragraph">
+              Devuelve true si los operandos son iguales.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>3 == var1</li>
+                <li>"3" == var1</li>
+                <li>3 == '3'</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">No es igual (!=)</td>
+            <td class="paragraph">
+              Devuelve true si los operandos no son iguales.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>var1 != 4</li>
+                <li>var2 != "3"</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Estrictamente igual (===)</td>
+            <td class="paragraph">
+              Devuelve true si los operandos son iguales y del mismo tipo.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>3 === var1</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Desigualdad estricta (!==)</td>
+            <td class="paragraph">
+              Devuelve true si los operandos son del mismo tipo, pero no
+              iguales, o son de diferente tipo.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>var1 !== "3"</li>
+                <li>3 !== '3'</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Mayor que (&gt;)</td>
+            <td class="paragraph">
+              Devuelve true si el operando izquierdo es mayor que el operando
+              derecho.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>var2 &gt; var1</li>
+                <li>"12" &gt; 2</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Mayor o igual que (&gt;=)</td>
+            <td class="paragraph">
+              Devuelve true si el operando izquierdo es mayor o igual que el
+              operando derecho.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>var2 &gt;= var1</li>
+                <li>var1 &gt;= 3</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Menor que (&lt;)</td>
+            <td class="paragraph">
+              Devuelve true si el operando izquierdo es menor que el operando
+              derecho.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>var1 &lt; var2</li>
+                <li>"2" &lt; 12</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Menor o igual (&lt;=)</td>
+            <td class="paragraph">
+              Devuelve true si el operando izquierdo es menor o igual que el
+              operando derecho.
+            </td>
+            <td class="paragraph">
+              <ul>
+                <li>var1 &lt;= var2</li>
+                <li>var2 &lt;= 5</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <div class="img-container">
+          <img src="assets/images/diff-2-3-equal.png" alt="== vs ===" />
+        </div>
+        <h4 class="subtitle-2">Operadores de asignación</h4>
+        <table>
+          <tr>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Nombre
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Descripción
+            </td>
+            <td class="paragraph" style="text-align: center; font-weight: bold">
+              Significado
+            </td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación</td>
+            <td class="paragraph">x = y</td>
+            <td class="paragraph">x = y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de adición</td>
+            <td class="paragraph">x += y</td>
+            <td class="paragraph">x = x + y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de resta</td>
+            <td class="paragraph">x -= y</td>
+            <td class="paragraph">x = x - y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de multiplicación</td>
+            <td class="paragraph">x *= y</td>
+            <td class="paragraph">x = x * y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de división</td>
+            <td class="paragraph">x /= y</td>
+            <td class="paragraph">x = x / y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de residuo</td>
+            <td class="paragraph">x %= y</td>
+            <td class="paragraph">x = x % y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de exponenciación</td>
+            <td class="paragraph">x **= y</td>
+            <td class="paragraph">x = x ** y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">
+              Asignación de desplazamiento a la izquierda
+            </td>
+            <td class="paragraph">x &lt;&lt;= y</td>
+            <td class="paragraph">x = x &lt;&lt; y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de desplazamiento a la derecha</td>
+            <td class="paragraph">x &gt;&gt;= y</td>
+            <td class="paragraph">x = x &gt;&gt; y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">
+              Asignación de desplazamiento a la derecha sin signo
+            </td>
+            <td class="paragraph">x &gt;&gt;&gt;= y</td>
+            <td class="paragraph">x = x &gt;&gt;&gt; y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación AND bit a bit</td>
+            <td class="paragraph">x &= y</td>
+            <td class="paragraph">x = x & y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación XOR bit a bit</td>
+            <td class="paragraph">x ^= y</td>
+            <td class="paragraph">x = x ^ y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación OR bit a bit</td>
+            <td class="paragraph">x |= y</td>
+            <td class="paragraph">x = x | y</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación AND lógico</td>
+            <td class="paragraph">x &&= y</td>
+            <td class="paragraph">x && (x = y)</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación OR lógico</td>
+            <td class="paragraph">x ||= y</td>
+            <td class="paragraph">x || (x = y)</td>
+          </tr>
+          <tr>
+            <td class="paragraph">Asignación de anulación lógica</td>
+            <td class="paragraph">x ??= y</td>
+            <td class="paragraph">x ?? (x = y)</td>
+          </tr>
+        </table>
+        <h3 class="subtitle">Ejemplos</h3>
+        <pre><code><span class="number">1</span> / <span class="number">2</span>; <span class="comment">// 0.5</span>
+<span class="number">1</span> / <span class="number">2</span> == <span class="number">1.0</span> / <span class="number">2.0</span>; <span class="comment">// Esto es true</span>
+<span class="expression">var</span> <span class="variable">a1</span> =  <span class="expression">true</span> && <span class="expression">true</span>;     <span class="comment">// t && t devuelve true</span>
+<span class="expression">var</span> <span class="variable">a2</span> =  <span class="expression">true</span> && <span class="expression">false</span>;    <span class="comment">// t && f devuelve false</span>
+<span class="expression">var</span> <span class="variable">o1</span> =  <span class="expression">true</span> || <span class="expression">true</span>;     <span class="comment">// t || t devuelve true</span>
+<span class="expression">var</span> <span class="variable">o2</span> = <span class="expression">false</span> || <span class="expression">true</span>;     <span class="comment">// f || t devuelve true</span>
+<span class="expression">var</span> <span class="variable">n1</span> = !<span class="expression">true</span>;  <span class="comment">// !t devuelve false</span>
+<span class="expression">var</span> <span class="variable">n2</span> = !<span class="expression">false</span>; <span class="comment">// !f devuelve true</span>
+<span class="expression">var</span> <span class="variable">mystring</span> = <span class="string">'alpha'</span>;
+<span class="variable">mystring</span> += <span class="string">'bet'</span>; <span class="comment">// se evalúa como "alphabet" y asigna este valor a mystring.</span></code></pre>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/header.js"></script>
+    <script type="text/javascript" src="src/footer.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head id="head">
+    <script type="text/javascript" src="src/head.js"></script>
+  </head>
+  <body id="body">
+    <main>
+      <div class="main-container">
+        <h2 class="title">Funciones</h2>
+        <h3 class="subtitle">Definición</h3>
+        <p class="paragraph">
+          Una función en JavaScript es un bloque de código designado para
+          ejecutar una tarea en particular.
+        </p>
+        <div class="img-container">
+          <img src="assets/images/functions.webp" alt="Funciones" />
+        </div>
+        <h3 class="subtitle">Tipos de funciones</h3>
+        <h4 class="subtitle-2">Declarativas</h4>
+        <p class="paragraph">
+          Este tipo de función se creará con la palabra reservada function,
+          seguido obligatoriamente por un nombre, que identificará a nuestra
+          función, una lista de parámetros entre paréntesis, y el símbolo de las
+          llaves {}. Qué será el que delimite el contenido de nuestro conjunto
+          de sentencias.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">function</span> <span class="function">nombre</span>(<span class="variable">param</span>){
+    <span class="string">sentencia</span>
+}</code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">function</span> <span class="function">hola</span>(<span class="variable">nombre</span>){
+    <span class="variable">console</span>.<span class="method">log</span>(<span class="string">`Hola ${<span class="variable">nombre</span>}.`</span>)
+}</code></pre>
+        <h4 class="subtitle-2">Expresión o anónimas</h4>
+        <p class="paragraph">
+          La sintaxis para crear estas funciones es similar a la anterior. La
+          única diferencia es que la definición de nuestra nueva función no
+          comienza por instrucción function y el nombre de la función es
+          opcional. Este tipo de funciones las podemos almacenar en una
+          variable.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="comment">// Asignarla a una variable como un objeto</span>
+<span class="expression">const</span> <span class="variable">ejemplo</span> = <span class="expression">function</span>(...) { ... }
+
+<span class="comment">// Crear un método en un objecto</span>
+{
+    ...
+    <span class="string">'suma'</span>: <span class="expression">function</span>(...) { ... },
+    ...
+}
+
+<span class="comment">// Utilizar la función como un callback</span>
+.<span class="method">cb</span>(<span class="expression">function</span>(...) { ... })</code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">const</span> <span class="variable">square</span> = <span class="expression">function</span>(<span class="variable">number</span>) { <span class="method">return</span> <span class="variable">number</span> * <span class="variable">number</span> }
+<span class="expression">var</span> <span class="variable">x</span> = <span class="function">square</span>(<span class="number">4</span>) <span class="comment">// x obtiene el valor 16</span></code></pre>
+        <h4 class="subtitle-2">Flecha o arrow functions</h4>
+        <p class="paragraph">
+          La forma de crear estas funciones es la siguiente: Primero definiremos
+          la lista de parámetros, en caso de ser necesario, entre paréntesis
+          seguido del símbolo => y las {} para indicar las instrucciones que se
+          van a realizar.
+        </p>
+        <h5 class="subtitle-3">Sintaxis</h5>
+        <pre><code><span class="expression">const</span> <span class="variable">nombre</span> = (<span class="variable">param</span>) =&gt; {
+  <span class="string">sentencia</span>
+}</code></pre>
+        <h5 class="subtitle-3">Ejemplo</h5>
+        <pre><code><span class="expression">const</span> <span class="variable">saluda</span> = (<span class="variable">nombre</span>) =&gt; {
+  <span class="method">return</span> <span class="string">`Hola ${<span class="variable">nombre</span>}`</span>;
+}
+
+<span class="variable">console</span>.<span class="method">log</span>(<span class="function">saluda</span>(<span class="string">'Victor'</span>))   <span class="comment">// =&gt; Hola Victor</span></code></pre>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/header.js"></script>
+    <script type="text/javascript" src="src/footer.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>
