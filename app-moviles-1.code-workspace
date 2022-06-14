@@ -1,16 +1,8 @@
 {
   "folders": [
     {
-      "path": "P1\\T_Clase"
-    },
-    {
-      "path": "P1\\Deberes"
-    },
-    {
-      "path": "P1\\Examen"
+      "path": "P2"
     }
   ],
-  "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "Deberes"
-  }
+  "settings": {}
 }
